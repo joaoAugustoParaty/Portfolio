@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <!--------CSS--------->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!--------BOX ICONS------->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <section class="main">
-        <div class="content">
-            <h2>Hello, I'm<br><span>João Augusto</span></h2>
-            <div class="animated-text">
-                <h3>Web Developer</h3>
-            </div>
-            <a href="#" class="btn">See My Work</a>
-            <div class="media-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+<!--------HEADER------->
+<header class="header-1">
+    <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
         </div>
-    </section>
-    <script src="script.js" charset="utf-8"></script>
+        <div>
+            <a href="#" class="nav__logo">João Augusto</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+            </div>
+<ul class="nav__list">
+    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+    <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+    <li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
+</ul>
+        </div>
+    </nav>
+</header>
+<main class="1-main"></main>
+    <!--------JS--------->
+    <script src="script.js"></script>
 </body>
 </html>
