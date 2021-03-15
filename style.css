@@ -499,3 +499,30 @@ transition: .5s;
 .services__content:hover .services__description{
     color: var(--first-color-lighten);
 }
+
+/*------PROJECT IN MIND-------*/
+.project{
+    background-color: var(--first-color);
+    padding-bottom: 0;
+}
+
+.project__container{
+    row-gap: 2rem;
+}
+
+.project_data{
+    text-align: center;
+}
+
+.project_title, .project_description{
+    color: var(--first-color-lighten);
+}
+
+.project__description{
+    margin-bottom: var(--mb-4);
+}
+
+.project__img{
+    width: 120px;
+    justify-self: center;
+}
