@@ -661,3 +661,31 @@ margin-bottom: var(--mb-1);
     font-size: var(--smaller-font-size);
     color: var(--text-color);
 }
+
+/*-------------MEDIA QUERIES---------------*/
+@media screen and (min-width: 768px){
+    .home__button{
+        width: initial;
+    }
+
+    .nav__menu{
+        width: var(--nav-width);
+    }
+
+    .about__container,
+    .skills__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about__data{
+        text-align: initial;
+    }
+    .about__description{
+        margin-bottom: var(--mb-5);
+    }
+    .about__img{
+        width: 220px;
+    }
+    .about__information{
+        padding-left: 4rem;
+    }
+}
