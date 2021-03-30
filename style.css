@@ -566,11 +566,14 @@ transition: .5s;
 .works__title{
     font-size: var(--h2-font-size);
     color: var(--first-color-lighten);
+    text-align: center;
 }
 
 .works__img:hover .works__data{
     bottom: 0;
 }
+
+
 
 /*---------CONTACT--------*/
 
@@ -772,5 +775,10 @@ margin-bottom: var(--mb-1);
 .services__container,
 .works__container{
     grid-template-columns: repeat(3,1fr);
+}
+
+.works__img{
+    width: 320px;
+    height: 450px;
 }
 }
