@@ -12,11 +12,11 @@
 
 /*--------Color----------*/
 --first-color: #28e763;
---first-color-dark: #eae7e6;
+--first-color-dark: #000000;
 --first-color-darken: #0c6024;
 --text-color: #0c6024;
---first-color-light: #eae7e6;
---first-color-lighten: #000000;
+--first-color-light: #ffffff;
+--first-color-lighten: #eae7e6;
 
 /*--------Font and typography----------*/
 --body-font: 'Poppins', sans-serif;
@@ -63,7 +63,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-dark);
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -152,15 +152,17 @@ img{
     align-items: center;
     background-color: var(--first-color);
     transition: .5s;
+
 }
 
 .nav__close{
-    position:absolute;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
     color: var(--first-color-dark);
     cursor: pointer;
+    
 }
 
 .nav__item{
@@ -170,28 +172,28 @@ img{
 .nav__link{
     font-size: 1rem;
     text-transform: uppercase;
-    color: var(--first-color-lighten);
+    color: var(--first-color-darken);
     font-weight: var(--font-bold);
-    transition: .3s
+    transition: .3s;
 }
+
 .nav__link:hover{
-    color: var(--text-color);
+    color:var(--first-color-dark);
 }
 
 .nav__toggle{
-    color: var(--first-color);
-    font-size: 1.3rem;
-    cursor: pointer;
+color: var(--first-color-dark);
+font-size: 1.3rem;
+cursor:pointer;
 }
-
 /*------Show menu------*/
 .show{
-    left: 0;
+left: 0;
 }
 
 /*------Active menu-------*/
 .active{
-    color: var(--text-color);
+    color: var(--first-color-dark);
 }
 
 
@@ -242,8 +244,8 @@ img{
 
 .home__social-link{
     display: inline-flex;
-    background-color: var(--first-color);
-    color: var(--first-color-lighten);
+    background-color: var(--first-color-darken);
+    color: var(--first-color-light);
     font-size: 1.1rem;
     border-radius: 50%;
     padding: .40rem;
@@ -252,7 +254,8 @@ img{
 }
 
 .home__social-link:hover{
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color);
+    color: var(--first-color-dark);
 }
 
 .home__button{
@@ -262,8 +265,8 @@ img{
 /*-------BUTTONS--------*/
 .button{
     display: inline-block;
-    background-color: var(--first-color);
-    color: var(--first-color-lighten);
+    background-color: var(--first-color-darken);
+    color: var(--first-color-light);
     padding: 1rem 2rem;
     font-weight: var(--font-semi-bold);
     border-radius: .5rem;
@@ -271,16 +274,17 @@ img{
 }
 
 .button:hover{
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color);
+    color: var(--first-color-dark);
 }
 
 .button__light{
-    background-color: var(--first-color-lighten);
-    color: var(--first-color);
+    background-color: var(--first-color-darken);
+    color: var(--first-color-light);
 }
 
 .button__light:hover{
-    color: var(--first-color-lighten);
+    color: var(--first-color-dark);
 }
 
 /*------------ABOUT--------------*/
@@ -468,14 +472,14 @@ img{
     font-size: 2rem;
     padding: .5rem;
     background-color: var(--first-color);
-    color: var(--first-color-lighten);
+    color: var(--first-color-dark);
     border-radius: 50%;
     margin-bottom: var(--mb-2);
 }
 
 .services__title{
     font-size: 1.25rem;
-    color: var(--first-color-dark);
+    color: var(--first-color);
     margin-bottom: var(--mb-1);
 }
 
@@ -488,16 +492,16 @@ transition: .5s;
 }
 
 .services__content:hover .services__icon{
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-dark);
     color: var(--first-color);
 }
 
 .services__content:hover .services__title{
-    color: var(--first-color-lighten);
+    color: var(--first-color-darken);
 }
 
 .services__content:hover .services__description{
-    color: var(--first-color-lighten);
+    color: var(--first-color-dark);
 }
 
 /*------PROJECT IN MIND-------*/
@@ -555,7 +559,7 @@ transition: .5s;
 .works__link{
     display: inline-flex;
     font-size: 1.5rem;
-    background-color: var(--first-color-lighten);
+    background-color: var(--first-color-dark);
     color: var(--first-color);
     padding: .25rem;
     border-radius: .25rem;
@@ -565,7 +569,7 @@ transition: .5s;
 
 .works__title{
     font-size: var(--h2-font-size);
-    color: var(--first-color-lighten);
+    color: var(--first-color-dark);
     text-align: center;
 }
 
@@ -646,7 +650,7 @@ margin-bottom: var(--mb-1);
 
 .footer__link{
     display: inline-flex;
-    background-color: var(--first-color);
+    background-color: var(--first-color-dark);
     color: var(--first-color-lighten);
     font-size: 1.1rem;
     border-radius: 50%;
@@ -657,7 +661,7 @@ margin-bottom: var(--mb-1);
 
 .footer__link:hover{
     background-color: var(--first-color-lighten);
-    color: var(--first-color);
+    color: var(--first-color-darken);
 }
 
 .footer__copy{
